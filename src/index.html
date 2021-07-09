@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/yoobic-grid-component.esm.js"></script>
+  <script nomodule src="/build/yoobic-grid-component.js"></script>
+</head>
+
+<body>
+  <grid-component></grid-component>
+</body>
+
+</html>
+
+<script>
+  const dataList = [{
+    id: 1,
+    name: 'Person 1'
+  },
+  {
+    id: 2,
+    name: 'Person 2'
+  },
+  {
+    id: 3,
+    name: 'Person 3'
+  }];
+
+  const myGridComponent = document.querySelector('grid-component');
+  myGridComponent.entryArray = dataList;
+
+</script>
